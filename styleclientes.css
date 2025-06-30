@@ -1,12 +1,10 @@
 * {
-
     margin: 0;
     padding: 0;
     font-style: italic;
 }
 
 body {
-
     width: 100%;
     height: 100%;
     background-image: url(img/culinária-regional-brasileira.jpg);
@@ -14,7 +12,6 @@ body {
 }
 
 .table {
-    
     padding-bottom: 35px;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -30,7 +27,6 @@ body {
 }
 
 .inputbox {
-
     margin: 10px;
     padding: 20px;
     border-spacing: 20px;
@@ -38,18 +34,16 @@ body {
 }
 
 .title {
-
     margin-top: 5%;
     font-size: 50px;
 }
 
 .subtitle {
-
     font-size: 25px;
 }
 
 .edit {
-
+    cursor: pointer;
     padding: 5px 20px;
     color: lightgoldenrodyellow;
     background-color: #58442c;
@@ -58,7 +52,7 @@ body {
 }
 
 .excluir {
-
+    cursor: pointer;
     padding: 5px 20px;
     color: lightgoldenrodyellow;
     background-color: #58442c;
@@ -67,7 +61,6 @@ body {
 }
 
 .add {
-
     margin: 30px;
     padding: 10px 30px;
     color: lightgoldenrodyellow;
@@ -77,11 +70,90 @@ body {
 }
 
 .voltar {
-
     margin: 30px;
     padding: 10px 30px;
     color: lightgoldenrodyellow;
     background-color: #58442c;
     border-radius: 50px 0px;
     text-decoration: none;
+}
+
+.modal-container {
+    color: #58442c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal {
+    width: 45%;
+    min-width: 400px;
+    min-height: 25%;
+    background-color: rgba(250, 250, 210, 0.575);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.botoes {
+    font-style: italic;
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+    float: right;
+}
+
+.btn-del {
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: lightgoldenrodyellow;
+    background-color: red;
+    font: bold;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.btn-return {
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #58442c;
+    background-color: rgb(184, 184, 152);
+    font: bold;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.modal h1 {
+    margin-bottom: 20px;
+}
+
+@keyframes animate-modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.mostrar .modal {
+    animation: animate-modal .3s;
 }

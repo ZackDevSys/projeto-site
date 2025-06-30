@@ -16,8 +16,8 @@ include_once 'php-action/db_connect.php'
     <div class="table">
 
         <table class="inputbox">
-            <h1 class="title" > Clientes </h1>
-            <thead class="subtitle" >
+            <h1 class="title"> Clientes </h1>
+            <thead class="subtitle">
                 <tr>
                     <th>Nome</th>
                     <th>Email</th>
@@ -40,7 +40,7 @@ include_once 'php-action/db_connect.php'
 
                         <td><a href="editar.php?id=<?php echo $dados['id']; ?>" class="edit"><i class="">Editar</i></a></td>
 
-                        <td><a onclick="openModal()" href="" class=""><i class="excluir">Excluir</i></a></td>
+                        <td><a onclick="openModal()"><i class="excluir">Excluir</i></a></td>
                     </tr>
 
                 <?php
@@ -48,11 +48,25 @@ include_once 'php-action/db_connect.php'
                 ?>
             </tbody>
         </table>
-        
+
         <a href="cadastro-cliente.php" class="add">Adicionar Cliente</a>
         <a href="index.html" class="voltar">Voltar</a>
 
     </div>
+
+    <div id="modal-container" class="modal-container">
+        <div class="modal">
+            <div class="botoes">
+                <button class="btn-del" id="excluir-cliente">Sim, excluir cliente</button>
+                <button class="btn-return" id="fechar">Não, cancelar operação</button>
+            </div>
+            <h1>Opa !</h1>
+            <h3>Tem certeza que deseja excluir cliente ?</h3>
+            <h5>Esta operação não poderá ser mais desfeita.</h5>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
