@@ -1,11 +1,9 @@
 * {
-
     margin: 0;
     padding: 0;
 }
 
 body {
-
     margin: 20px;
     font-style: italic;
     background-image: url(img/culinária-regional-brasileira.jpg);
@@ -14,7 +12,6 @@ body {
 }
 
 header {
-
     margin: 5px;
     padding: 30px 10px;
     font-weight: bold;
@@ -26,13 +23,11 @@ header {
 }
 
 .center {
-
     color: #58442c;
     font-size: 35px;
 }
 
 .area-menu {
-
     display: flex;
     font-size: 18px;
     margin: 20px;
@@ -42,32 +37,27 @@ header {
 }
 
 .area-menu ul {
-
     list-style-type: none;
 }
 
 .area-menu ul li {
-
     display: inline-block;
 }
 
 .area-menu ul li a {
-
     color: #58442c;
     text-decoration: none;
     border-radius: 50px 0px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     transition: 0.5s;
 }
 
 .area-menu ul li a:hover {
-
     background-color: #58442c;
     color: rgb(160, 142, 102);
 }
 
 main {
-
     margin: 5px;
     font-weight: bold;
     color: #58442c;
@@ -78,25 +68,21 @@ main {
 }
 
 main h2 {
-
     font-size: 30px;
     margin: 10px;
     padding: 10px 0px;
 }
 
 main p {
-
     padding: 10px 10px;
 }
 
 .footer {
-
     margin: 10px;
     color: lightgoldenrodyellow;
 }
 
 .box {
-
     color: #58442c;
     font-style: italic;
     font-weight: bold;
@@ -110,12 +96,10 @@ main p {
 }
 
 fieldset {
-
     border: 3px solid #58442c;
 }
 
 legend {
-    
     color: lightgoldenrodyellow;
     border: 1px solid lightgoldenrodyellow;
     padding: 10px;
@@ -125,12 +109,10 @@ legend {
 }
 
 .inputBox {
-
     position: relative;
 }
 
 .inputUser {
-
     background: none;
     border: none;
     border-bottom: 1px solid #58442c;
@@ -141,7 +123,6 @@ legend {
 }
 
 .labelInput {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -151,14 +132,12 @@ legend {
 
 .inputUser:focus~.labelInput,
 .inputUser:valid~.labelInput {
-
     top: -20px;
     font-size: 12px;
     color: #58442c;
 }
 
 #data_nascimento {
-
     color: #58442c;
     border: none;
     padding: 8px;
@@ -168,7 +147,6 @@ legend {
 }
 
 #submit {
-
     margin-bottom: 3%;
     text-decoration: none;
     border-radius: 50px;
@@ -185,20 +163,24 @@ legend {
 }
 
 #submit:hover {
-
     color: rgba(250, 250, 210, 0.534);
     background-color: #58442c;
 }
 
 .cliente {
-
     font-size: 18px;
     display: flex;
     justify-content: center;
     margin: 5px;
     padding: 10px 30px;
-    color: lightgoldenrodyellow;
-    background-color: #58442c;
+    color: #58442c;
+    background-color: rgb(160, 142, 102);
     border-radius: 50px 0px;
     text-decoration: none;
+    transition: .5s;
+}
+
+.cliente:hover {
+    background-color: #58442c;
+    color: rgb(160, 142, 102);
 }

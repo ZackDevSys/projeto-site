@@ -45,37 +45,63 @@ body {
 .edit {
     cursor: pointer;
     padding: 5px 20px;
-    color: lightgoldenrodyellow;
-    background-color: #58442c;
+    color: #58442c;
     border-radius: 50px 0px;
+    background-color: rgb(160, 142, 102);
     text-decoration: none;
+    color: #58442c;
+    transition: 0.5s;
+}
+
+.edit:hover {
+    background-color: #58442c;
+    color: rgb(160, 142, 102);
 }
 
 .excluir {
     cursor: pointer;
     padding: 5px 20px;
-    color: lightgoldenrodyellow;
-    background-color: #58442c;
+    color: #58442c;
     border-radius: 50px 0px;
+    background-color: rgb(160, 142, 102);
     text-decoration: none;
+    color: #58442c;
+    transition: 0.5s;
+}
+
+.excluir:hover {
+    background-color: #58442c;
+    color: rgb(160, 142, 102);
 }
 
 .add {
     margin: 30px;
     padding: 10px 30px;
-    color: lightgoldenrodyellow;
-    background-color: #58442c;
+    color: #58442c;
+    background-color: rgb(160, 142, 102);
     border-radius: 50px 0px;
     text-decoration: none;
+    transition: .5s;
+}
+
+.add:hover {
+    background-color: #58442c;
+    color: rgb(160, 142, 102);
 }
 
 .voltar {
     margin: 30px;
     padding: 10px 30px;
-    color: lightgoldenrodyellow;
-    background-color: #58442c;
+    color: #58442c;
+    background-color: rgb(160, 142, 102);
     border-radius: 50px 0px;
     text-decoration: none;
+    transition: .5s;
+}
+
+.voltar:hover {
+    background-color: #58442c;
+    color: rgb(160, 142, 102);
 }
 
 .modal-container {
